@@ -1,0 +1,48 @@
+*{margin:0;padding:0;}
+ul,li{list-style: none}
+.main{width:858px;height:570px;background:white;margin:187px auto;border:1px solid #ccc;}
+
+.left{width:220px;height:570px;border-right:1px solid #ccc;float: left;}
+.userinfo{background: url("../images/bg_userinfo.png") #e45050 no-repeat top left;height:95px;padding: 28px 0 10px 10px; color: #fff;font-size: 12px;}
+.userinfo .u_pic{position: relative;  float: left;  width: 60px;  height: 60px;  z-index: 2;overflow: hidden;}
+.userinfo .u_pic img{width:56px;border-radius:50%;border: 2px solid white;}
+.userinfo .info-m{float: right;  width: 140px;  padding-left: 5px;}
+.userinfo .info-m .u-name{font-size: 18px;  font-family: "microsoft yahei";  color: #fff;  line-height: 28px;  margin-bottom: 5px;  text-overflow: ellipsis;  white-space: nowrap;}
+
+.servicelist{height:437px;width:220px;background: #363e47}
+.servicelist li{width:218px;height:58px;background: #2f363e;position: relative; border: 1px solid #2f363e;}
+.servicelist li.act{border: 1px solid white;background: black;}
+.servicelist li>a{padding: 6px 10px 7px 55px;  height: 100%;  color: #707D8A;  display: block;  min-height: 47px;}
+.servicelist li>a>span{top: 10px;  left: 8px;  vertical-align: middle;  text-align: right;position: absolute;  width: 40px;  height: 40px;background: url('../images/user-img.jpg') no-repeat center center;background-size: 40px 40px;border-radius: 50%;}
+.servicelist li>a span em{bottom: -7px;  left: 5px;  display: inline-block;  font-style: normal;  width: 30px;  height: 20px;  font-size: 12px;  background: url(../images/bg_grade2.png) left 3px no-repeat;  vertical-align: middle;position: absolute;  color: #fff;  text-align: center;}
+.servicelist li>a .category{margin-bottom: 5px;  display: block;  font-size: 13px;  color: #fff;  font-weight: 400;  line-height: 20px;  overflow: hidden;  white-space: nowrap;}
+.servicelist li>a .category span{display: inline-block;  vertical-align: middle;  width: 120px;  overflow: hidden;  text-overflow: ellipsis;font-size: 13px;  color: #fff;  font-weight: 400;  line-height: 20px;  height:20px;  white-space: nowrap;}
+
+
+
+
+.right{width:637px;height:570px;float: right;}
+.right .title{width: 637px;height:44px;border-bottom: 1px solid #ccc;padding: 5px 0 0;}
+.right .title h1{padding: 5px 5px 0 12px;  font-size: 16px;}
+.right .title h1 em{margin-right: 5px;  display: inline-block;  width: 30px;  height: 20px;  font-size: 12px;  font-weight: 400;  color: #fff;  background: url(../images/bg_grade2.png) left 2px no-repeat;vertical-align: middle;}
+.right .title h1 span{font-weight: 100;  color: #262d34;line-height: 1.5;vertical-align: middle;}
+
+.servicewindow{width:637px;height:520px;}
+.servicewindow_top{height:395px;border-bottom: 1px solid #ccc;position: relative;}
+.servicewindow_top>.cont{height:395px;  padding: 0 10px;overflow: auto;position: absolute;top:0;left:0;width:617px;background: white;}
+
+.dialogue{border-radius: 8px;background: #acede6;padding:5px 10px 5px 10px;margin-right:50px;float: left;clear:both;margin-top: 10px;position: relative;}
+.dialogue::before{content: '';width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-right:10px solid #acede6;position: absolute;top:20px;left:-10px;}
+.dialogue .username{height:20px;line-height: 20px;color:red;font-size: 16px;overflow: hidden;float: left;}
+.dialogue .text{line-height: 25px;font-size:20px;margin-top: 30px;max-width: 547px;word-wrap:break-word;}
+.rightside{float: right;margin-right:0;margin-left: 50px;}
+.rightside::before{content: '';width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:10px solid #acede6;border-right:0px solid #acede6;position: absolute;top:20px;right:-10px;left:auto;}
+.rightside .username{float: right;}
+
+
+
+
+.servicewindow_bottom{width:637px;height:124px;position: relative;  z-index: 9;}
+.servicewindow_bottom .btn{border: none;  position: absolute;  right: 0;  bottom: -4px;  width: 140px;height: 56px;  line-height: 56px;  text-align: right;}
+.servicewindow_bottom .btn .btn-send{position: relative;  float: right;  margin: 12px 60px;background: #e66464;width: 74px;  color: #fff;  font-size: 16px;border-right: 1px solid #f0a2a2;height: 36px;  line-height: 36px;  float: left;  text-align: center;cursor:pointer;}
+.servicewindow_bottom textarea{padding:10px 10px 10px 10px;width:532px;height:104px;line-height:16px;display: block;border:none;resize:none }

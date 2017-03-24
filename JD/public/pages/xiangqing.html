@@ -1,0 +1,105 @@
+<div class="page1 clearfix">
+    <div class="inner clearfix">
+
+        <div class="main clearfix">
+            <div class="left clearfix">
+                <div class="pic">
+                    <div class="photo clearfix">
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <div class="hand"></div>
+                    </div>
+                    <div class="zoom">
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                        <img ng-src="images/{{product.imgsrc}}"/>
+                    </div>
+                </div>
+
+                <div class="change clearfix">
+                    <ul class="clearfix">
+                        <li class="act"><img ng-src="images/{{product.imgsrc}}"/></li>
+                        <li><img ng-src="images/{{product.imgsrc}}"/></li>
+                        <li><img ng-src="images/{{product.imgsrc}}"/></li>
+                        <li><img ng-src="images/{{product.imgsrc}}"/></li>
+                        <li><img ng-src="images/{{product.imgsrc}}"/></li>
+                    </ul>
+                    <span class="pre"></span>
+                    <span class="next"></span>
+                </div>
+                <p>商品编号:3267424<span class="guan"><i></i><a href="#">关注商品</a></span><span class="fen"><i></i><a href="#">分享</a></span></p>
+            </div>
+            <div class="center">
+                <div class="c_top clearfix">
+                    <div class="l">
+                        <h3>{{product.title}}</h3>
+                        <h5>{{product.desc}}</h5>
+                    </div>
+                    <div class="r">
+                        <a href="#">对比</a>
+                    </div>
+                </div>
+                <div class="c_middle clearfix">
+                    <div class="l">
+                        <dl class="dl1 clearfix">
+                            <dt>京 东 价:</dt>
+                            <dd><span>￥{{product.price}}.00</span><a href="#">(降价通知)</a></dd>
+                        </dl>
+                        <dl class="dl2 clearfix">
+                            <dt>促销信息：</dt>
+                            <dd><span>手机专享价</span>￥{{product.price}}.00<span>去手机购买<i></i></span></dd>
+                        </dl>
+                    </div>
+                    <div class="r">
+                        <div class="speak">
+                            <span>累计评价</span>
+                            <a href="#">4978</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="c_bottom">
+                    <dl class="dl1">
+                        <dt>支　　持：</dt>
+                        <dd><a href="#"><i></i>以旧换新</a></dd>
+                        <dd><a href="#"><i></i>礼品购</a></dd>
+                    </dl>
+                    <dl class="dl2 clearfix">
+                        <dt>配 送 至：</dt>
+                        <dd>
+                            <div class="pei" id="pei">北京朝阳区管庄<span></span>
+                                <div class="song" id="song"></div>
+                            </div>
+                        </dd>
+                        <dd>有货，支持 99元免运费  |  货到付款</dd>
+                    </dl>
+                    <dl class="dl3 clearfix">
+                        <dt>服　　务：</dt>
+                        <dd>由京东发货，并提供售后服务。11:10前完成下单,预计今天送达</dd>
+                    </dl>
+                    <dl class="dl5 clearfix">
+                        <dt>
+                            <input type="number" ng-model="number"/>
+                        </dt>
+                        <dd ng-click="add(product,number)"></dd>
+                    </dl>
+                    <dl class="dl6 clearfix">
+                        <dt>温馨提示：</dt>
+                        <dd>1.本商品不能使用东券</dd>
+                        <dd>2.支持7天无理由退货</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="right">
+                <div class="r_bottom">
+                    <h6>服务支持</h6>
+                    <span><a href="#"><img src="images/right3_2.png"/>自提</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.navbar{margin-bottom: 0;}
+.navbar-default {
+    background-color: #e45050;
+}
+.bg-info{background-color:white;}
+#messages {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    border: 1px solid teal;
+}
+
+.customer{
+    height: 40px;margin: 5px 0;padding:0 5px;line-height: 40px;
+}

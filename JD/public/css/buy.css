@@ -1,0 +1,11 @@
+.cart{background: white;}
+.cart button{background:red;color:white;}
+.chakan{width:1190px;margin: 0 auto;height:60px;line-height: 60px;font-size: 30px;background: red;border-radius: 8px;color:white;padding-left:10px;}
+.cart-body{width:1190px;margin: 0 auto;}
+.cart-body table{width:100%;text-align: center}
+.cart-body table img{width:50px}
+.cart-body table thead tr{background:  #f3f3f3;}
+.cart-body table tr:nth-child(2n){background:  #fff4e8;}
+.cart-body table tfoot tr{background:  #f3f3f3;}
+.cart-body-well{background:#f3f3f3;margin: 10px;width:100%;text-align: center;height:40px;line-height: 40px;font-size: 40px;border-radius: 8px;}
+.cart-body-well a{color:blue;font-weight: bolder;}

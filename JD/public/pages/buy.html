@@ -1,0 +1,47 @@
+<div class="cart">
+    <div class="chakan">查看购物车</div>
+    <div class="cart-body">
+        <p class="cart-body-well" ng-show="cart.length==0">
+            您的购物车中还没有商品。<a href="#/search">去购物！</a>
+        </p>
+
+        <table class="" ng-show="cart.length>0">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>商品名称</th>
+                <th>商品价格</th>
+                <th>购买数量</th>
+                <th>小计（元）</th>
+                <th>预览</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--使用自定义过滤器:指定过滤器名称和参数. limitTo-->
+            <tr ng-repeat="item in cart">
+                <td>{{$index + 1}}</td>
+                <td>{{item.product.title}}</td>
+                <td>{{item.product.price | currency:"￥"}}</td>
+                <td><input type="number" ng-model="item.number"></td>
+                <td>{{item.number * item.product.price | currency:"￥"}}</td>
+                <td><img ng-src="images/{{item.product.imgsrc}}"/></td>
+                <td>
+                    <button class="btn btn-link" ng-click="remove(item.product.title)">删除</button>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th></th>
+                <th>总计:</th>
+                <th></th>
+                <th>{{count()}}</th>
+                <th>{{money() | currency:"￥"}}</th>
+                <th></th>
+                <th><button>去结算</button></th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

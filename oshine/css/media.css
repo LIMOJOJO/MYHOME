@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:1280px){
+.section1 .pic{width:944px;}
+.section1 .pic img{width:944px;}
+
+.section2{width:934px;}
+.section2 .left{width:300px;}
+.section2 ul li{height:196px;}
+.section2 ul li .pics{width:61px;}
+.section2 ul li .text{width:239px;}
+.section2 .pic{width:264px;}
+.section2 .pic img{width:264px;}
+.section2 .right{width:300px;}
+
+.section7{background:#f2f3f8;position:relative;height:607px;}
+.section7 .inner{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:934px;}
+.section7 .oshin{float:left;width:184px;}
+.section7 .oshin li{margin-right:10px;}
+.section7 .post{float:left;margin:70px 0 0 56px;width:164px;}
+.section7 .link{float:left;}
+.section7 .link ul .fa-arrow-right{padding:0 11px 0 3px;}
+.section7 .from{float:right;width:240px;}
+.section7 .from ul li{float:left;padding:0 15px 15px 0;}
+
+}
+@media screen and (max-width:1024px){
+header .run h2{width:34%;}
+}
+@media screen and (max-width:960px){
+nav{display:none;}
+header .icon a:first-child{display:inline-block;}
+
+.section1 .pic{width:700px;}
+.section1 .pic img{width:700px;}
+.section1 ul li{width:100%;float:none;}
+
+.section2{width:700px;}
+.section2 .left{width:225px;}
+.section2 ul li{height:147px;}
+.section2 ul li .pics{width:45px;}
+.section2 ul li .text{width:179px;}
+.section2 .pic{width:198px;}
+.section2 .pic img{width:198px;}
+.section2 .right{width:225px;}
+
+.section7{background:#f2f3f8;position:relative;height:947px;}
+.section7 .inner{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:701px;}
+.section7 .oshin{float:left;width:138px;}
+.section7 .oshin li{margin-right:7px;}
+.section7 .post{float:left;margin:70px 0 0 42px;width:123px;}
+.section7 .link{float:left;}
+.section7 .link ul .fa-arrow-right{padding:0 8px 0 2px;}
+.section7 .from{float:right;width:160px;}
+.section7 .from ul li{float:left;padding:0 11px 15px 0;}
+}
+@media screen and (max-width:768px){
+header .run h2{font-size:25px;transition: 1s all;}
+.section1 .pic{width:384px;}
+.section1 .pic img{width:384px;}
+
+.section2{margin:0 auto;width:560px;}
+.section2 .left{float:none;width:100%;}
+.section2 ul li .text{float:left;width:420px;}
+.section2 .pic{float:none;width:100%;padding:90px 3% 90px; 3%;}
+.section2 .pic img{width:100%;}
+.section2 .right{float:none;width:100%;}
+
+.section3 .pics .pic{margin:0 3% 40px 0;width:48%;position:relative;display:block;}
+.section3 .pics .pic:nth-child(3n){margin:0 3% 40px 0;}
+.section3 .pics .pic:nth-child(2n){margin:0 0 40px 0;}
+
+.section4 p:first-of-type{width:480px;}
+
+.section5 ul{padding:0 20px;display:inline-block;}
+.section5 ul li{float:left;margin:0 3% 90px 0;width:48%;}
+.section5 ul li:nth-child(2){margin:0 0 90px 0;}
+.section5 ul li:nth-child(3),.section5 ul li:nth-child(4),.section5 ul li:nth-child(5),.section5 ul li:nth-child(6){display:none;}
+.section5 ul .boxs{display:inline-block;}
+
+.section7{background:#f2f3f8;position:relative;height:1212px;}
+.section7 .inner{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:537px;}
+.section7 .oshin{float:left;width:100%;}
+.section7 .post{float:left;width:100%;margin:70px 0 0 0;}
+.section7 .link{float:left;margin:70px 0 0 0;;}
+.section7 .from{float:left;width:90%;}
+}
+@media screen and (max-width:480px){
+.section1 .pic{width:340px;}
+.section1 .pic img{width:340px;}
+
+.section2{margin:0 auto;width:350px;}
+.section2 .left{float:none;width:100%;}
+.section2 ul li .text{float:left;width:270px;}
+.section2 .pic{float:none;width:100%;padding:90px 3% 90px; 3%;}
+.section2 .pic img{width:100%;}
+.section2 .right{float:none;width:100%;}
+
+.section3 .pics .pic{margin:0 0 40px 0;width:100%;position:relative;display:block;}
+
+.section4 p:first-of-type{width:350px;}
+
+.section7{background:#f2f3f8;position:relative;height:1380px;}
+.section7 .inner{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:288px;}
+.section7 .oshin{float:left;width:100%;}
+.section7 .post{float:left;width:100%;margin:70px 0 0 0;}
+.section7 .link{float:left;margin:70px 0 0 0;;}
+.section7 .from{float:left;width:90%;}
+}

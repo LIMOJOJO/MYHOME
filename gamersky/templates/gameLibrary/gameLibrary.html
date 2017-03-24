@@ -1,0 +1,23 @@
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button class="button button-clear icon ion-navicon"  ng-click="openModal()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-search" ui-sref="tabs.search"></button>
+    </ion-nav-buttons>
+    <ion-header-bar class="bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="text" placeholder="搜索感兴趣的游戏"/>
+        </label>
+        <button class="button icon ion-calendar button-positive">发售表</button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="row row-wrap" >
+            <div class="col col-33" ng-repeat="product in products">
+                <img ng-src="{{product.imgsrc}}" width="100%" height="90%"/>
+                <p style="text-align: center;padding-top:8px;">{{product.title}}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button class="button button-clear icon ion-navicon"  ng-click="openModal()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-plus" ui-sref="tabs.dingyue"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <!--<ion-item class="item-avatar" ng-repeat="product in products" ui-sref="tabs.detail">-->
+            <!--如果传参的话，只能使用url导航携带参数-->
+            <ion-item class="item-thumbnail-left" ng-repeat="product in products">
+                <img ng-src="{{product.imgsrc}}"/>
+                <h2>{{product.title}}</h2>
+                <p>{{product.desc}}评论</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

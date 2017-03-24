@@ -1,0 +1,10 @@
+<div style="width:100%;">
+    <ion-list>
+        <ion-item class="item-thumbnail-left" ng-repeat="product in dingyue">
+            <img ng-src="{{product.imgsrc}}" style="border-radius: 5px"/>
+            <h2>{{product.title}}</h2>
+            <p style="left: 106px;position: absolute">{{product.desc}}人订阅</p>
+            <button class="button button-assertive" style="right:20px;position: absolute">订阅</button>
+        </ion-item>
+    </ion-list>
+</div>

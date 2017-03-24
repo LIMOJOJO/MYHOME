@@ -1,0 +1,15 @@
+<ion-view hide-tabs="true">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-search"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-thumbnail-left" ng-repeat="product in dingyue">
+                <img ng-src="{{product.imgsrc}}" style="border-radius: 5px"/>
+                <h2>{{product.title}}</h2>
+                <p style="left: 106px;position: absolute">{{product.desc}}人订阅</p>
+                <button class="button button-assertive" style="right:20px;position: absolute">订阅</button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view hide-tabs="true">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-search"></button>
+    </ion-nav-buttons>
+    <ion-nav-title class="item-input-inset">
+        <label class="item-input-wrapper">
+            <input type="text" placeholder="请输入搜索内容">
+        </label>
+    </ion-nav-title>
+    <ion-header-bar class="bar-subheader" style="padding: 0;">
+        <div style="display:flex;width:100%;">
+            <div style="flex:1;text-align: center;" class="tab_default" ng-repeat="d in tabNames" ng-click="activeSlide($index)" ng-class="slectIndex==$index ? 'tab_select' : '' ">
+                {{d}}
+                <div class="arrow-top" style="left:{{15+$index*33}}%" ng-show="slectIndex==$index"></div>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" does-continue="false" show-pager="false">
+            <ion-slide ng-repeat="p in pages">
+                <div ng-include="p"></div>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+</ion-view>

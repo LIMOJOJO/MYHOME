@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script>
+    <script src="templates/news/news.js"></script>
+    <script src="templates/gameLibrary/gameLibrary.js"></script>
+    <script src="templates/mobileGames/mobileGames.js"></script>
+    <script src="templates/subscription/subscription.js"></script>
+    <script src="templates/search/search.js"></script>
+    <script src="templates/dingyue/dingyu.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="myCtrl">
+<ion-nav-bar class="bar-assertive">
+    <ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+<ion-nav-view></ion-nav-view>
+<!--内联模板-->
+<script id="views/modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-assertive mobar">
+            <img src="images/touxiang.jpg" style="width:66px;height:66px;border-radius: 50%;margin: 20px auto">
+            <h1 class="title" style="top:90px;">LIMOJOJO</h1>
+        </ion-header-bar>
+        <ion-content class="padding mobar-ion">
+            <div class="list">
+                <div class="item itema">
+                    <i class="icon ion-ios-search iion"></i>
+                    <p class="pp">搜索</p>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-document-text iion"></i>
+                    <p class="pp">要闻</p>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-android-star-outline iion"></i>
+                    <p class="pp">收藏</p>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-ios-game-controller-b-outline iion"></i>
+                    <p class="pp">游戏管理</p>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-android-textsms iion"></i>
+                    <p class="pp">评论回复</p>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-ios-moon-outline iion"></i>
+                    <p class="pp">夜间模式</p>
+                    <label class="la">
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-image iion"></i>
+                    <p class="pp">非wifi网络无图</p>
+                    <label class="la">
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-ios-download-outline iion"></i>
+                    <p class="pp">清空缓存</p>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-ios-information-outline iion"></i>
+                    <p class="pp">意见反馈</p>
+                </div>
+                <div class="item itema">
+                    <i class="icon ion-ios-gear-outline iion"></i>
+                    <p class="pp">更多设置</p>
+                </div>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>
+</body>
+</html>

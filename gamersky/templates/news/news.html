@@ -1,0 +1,33 @@
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button class="button button-clear icon ion-navicon"  ng-click="openModal()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-plus"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-slide-box id="slide_box" auto-play="true" does-continue="true" slide-interval="2500" show-pager="true">
+            <ion-slide>
+                <div class="box"><img src="images/news_slide_1.jpg" width="100%"/> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/news_slide_2.jpg" width="100%"/> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/news_slide_3.jpg" width="100%"/> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/news_slide_4.jpg" width="100%"/> </div>
+            </ion-slide>
+        </ion-slide-box>
+        <ion-list>
+            <!--<ion-item class="item-avatar" ng-repeat="product in products" ui-sref="tabs.detail">-->
+            <!--如果传参的话，只能使用url导航携带参数-->
+            <ion-item class="item-thumbnail-left" ng-repeat="product in products">
+                <img ng-src="{{product.imgsrc}}"/>
+                <h2>{{product.title}}</h2>
+                <p>{{product.desc}}评论</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

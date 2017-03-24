@@ -1,0 +1,50 @@
+img{display: block;}
+a{text-decoration: none}
+.slider-pager{text-align: right;right:20px;bottom:10px;}
+.slider-pager .slider-pager-page.active{color:red;}
+.item p{position: absolute;bottom:6px;right:6px;}
+.modal{width:80%;top:0;left:0;bottom:0;right:20%;}
+.modal-backdrop-bg{background-color: #000;opacity: 0.5;}
+.mobar{height:132px;}
+.mobar-ion{top:132px;}
+.itema{border-width: 0;padding:10px;}
+.iion{margin-right: 40px;}
+.itema .pp{right:auto;left:60px;bottom:10px;}
+.la{position: absolute;right:20px;}
+.tab-item.tab-item-active{color:red;}
+
+.slide-in-left {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.slide-in-left.ng-enter, .slide-in-left > .ng-enter {
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+    transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+}
+
+.slide-in-left.ng-enter-active, .slide-in-left > .ng-enter-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.slide-in-left.ng-leave, .slide-in-left > .ng-leave {
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+}
+
+
+
+
+
+
+.tab_default{
+    border-bottom:solid 1px white;
+    padding:6px 0;
+}
+.tab_select{
+    color:red;
+    border-bottom:solid 1px red;
+    box-shadow:0 -3px 8px #C1D3F0 inset;
+}
+
